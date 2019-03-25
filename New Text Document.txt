@@ -1,0 +1,9 @@
+cd terraform
+ls
+>terraform init
+>terraform plan --var-file test.tfvars
+>terraform plan --var-file prod.tfvars
+>terraform plan --var-file prod.tfvars  -out myprodplan
+>terraform apply myprodplan
+>
+>terraform destroy --var-file prod.tfvars
